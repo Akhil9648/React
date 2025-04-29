@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Header from "./Components/Header.js";
+import Footer from "./Components/Footer.js";
+import Number from "./Components/Number.js";
+import React, { useState } from "react";
 function App() {
+  const [num, setNum] = useState(0);
+  const increment = () => setNum((prev) => prev + 1);
+  const decrement = () => setNum((prev) => prev - 1);
+  const reset = () => setNum((prev) => 0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Number
+        num={num}
+        increment={increment}
+        decrement={decrement}
+        reset={reset}
+      />
+      <Footer />
+    </>
+    // <h1 className='text-center'>Counter</h1>
   );
 }
-
 export default App;
