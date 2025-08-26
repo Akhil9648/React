@@ -2,41 +2,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import Card from './Card'
 function App() {
   const [count, setCount] = useState(0)
-
+  let myObj={
+    username:"Akhil",
+    age:19
+  }
   return (
     <>
       <h1 className='bg-green-400 text-black rounded-xl'>TailWind Test</h1>
-         <div className="flex flex-col rounded-xl  p-4"
-        style={{
-          border: '0.88px solid',
-  
-          backdropFilter: 'saturate(180%) blur(14px)',
-          background: ' #ffffff0d',
-        }}
-      >
-        <div>
-          <img
-            src="https://res.cloudinary.com/ddcg0rzlo/image/upload/v1652470298/9StaF0UBJfih_df0248.gif"
-            alt="nft-gif"
-            width="400"
-            height="400"
-            className="rounded-xl"></img>
-        </div>
-        <div className="flex flex-col  rounded-b-xl py-4 ">
-          <div className="flex justify-between">
-            <p className="font-RubikBold ">Bored ape nft accidental</p>
-            <p className="font-bold font-RubikBold">Price</p>
-          </div>
-          <div className="flex  justify-between font-mono">
-            <p>#345</p>
-            <p>0.01</p>
-          </div>
-        </div>
-      </div>
-        
+      <Card channel="Hanji" price="$100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF5NQoF04gFj_CjX4f6n_PbXzHJ8U25ovGUw&s"/>
+      <Card channel="Temba" price="$90" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQOxcyCvjWlebQdS6M3q0Sz0ZUAaWJ75YIA&s"/>
     </>
   ) 
 } 
