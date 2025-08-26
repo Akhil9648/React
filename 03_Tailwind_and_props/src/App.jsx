@@ -9,19 +9,28 @@ function App() {
   return (
     <>
       <h1 className='bg-green-400 text-black rounded-xl'>TailWind Test</h1>
-       <div className="w-60 flex flex-col rounded-xl bg-black min-h-[19rem] ">
+         <div className="flex flex-col rounded-xl  p-4"
+        style={{
+          border: '0.88px solid',
+  
+          backdropFilter: 'saturate(180%) blur(14px)',
+          background: ' #ffffff0d',
+        }}
+      >
         <div>
           <img
-            src="https://cdn.vox-cdn.com/thumbor/ZkmdkuJUTLgJh96_FWQ5zweGGxo=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23084330/bored_ape_nft_accidental_.jpg"
-            alt="test"
-            className="object-cover object-center rounded-t-xl"></img>
+            src="https://res.cloudinary.com/ddcg0rzlo/image/upload/v1652470298/9StaF0UBJfih_df0248.gif"
+            alt="nft-gif"
+            width="400"
+            height="400"
+            className="rounded-xl"></img>
         </div>
-        <div className="flex flex-col py-3 px-3 pb-10">
-          <div className="flex justify-between ">
-            <h1 className="font-bold ">Bored ape nft accidental</h1>
-            <h1>Price</h1>
+        <div className="flex flex-col  rounded-b-xl py-4 ">
+          <div className="flex justify-between">
+            <p className="font-RubikBold ">Bored ape nft accidental</p>
+            <p className="font-bold font-RubikBold">Price</p>
           </div>
-          <div className="flex  justify-between">
+          <div className="flex  justify-between font-mono">
             <p>#345</p>
             <p>0.01</p>
           </div>
